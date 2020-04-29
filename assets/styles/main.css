@@ -474,3 +474,27 @@ header {
 .bg-black-95 {
     background-color: #000000f0;
 }
+
+.footer-logo-igl {
+    height: 3rem;
+    object-fit: contain;
+
+}
+
+.divider {
+    height: .1rem;
+}
+.grey {
+    background-color: #4D4C4B;
+}
+.btn-outline-grey {
+    border-color: #4D4C4B!important;
+}
+
+.b-w-1 {
+    border-width: 1px!important;
+}
+
+.border-grey {
+    border: 1px solid #4D4C4B;
+}
