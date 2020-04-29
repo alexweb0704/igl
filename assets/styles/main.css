@@ -646,7 +646,14 @@ header {
 }
 
 .menu-item .menu-link{
-    font-family: "UI Pro Ultralight", sans-serif;
+    font-family: "SF Display", sans-serif;
+    font-weight: 100;
+    color: #fff;
+}
+
+.menu-item .menu-link:hover{
+    text-transform: none;
+    text-decoration: none;
 }
 
 .menu-footer {
