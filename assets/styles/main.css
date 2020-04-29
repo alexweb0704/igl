@@ -68,6 +68,32 @@ p {
     border-color: #35a103cc!important;
 }
 
+.bg-success {
+    background-color: #35A103!important;
+}
+
+.text-success {
+    color: #35A103!important;
+}
+
+.display-5 {
+    font-size: 2.25rem;
+    line-height: 1;
+}
+
+.display-2 {
+    font-size: 5.75rem;
+    line-height: 1;
+}
+
+.line-height-1 {
+    line-height: 1;
+}
+
+.border-3 {
+    border-width: 4px!important;
+}
+
 .btn-success:focus, .btn-success.focus {
     color: #000000;
     background-color: #218838;
@@ -155,12 +181,26 @@ sup {
     border-bottom: 1px solid #00000022;
 }
 
-.phone {
+.phone-container, .phone {
+    border: 1.25vh solid transparent;
     position: relative;
     width: 30vh;
     height: 62vh;
     border-radius: 5vh;
-    border: 1.25vh solid #ffffff;
+}
+
+.phone {
+    border-color: #ffffff;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.phone>.phone-inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .phone:before {
@@ -176,16 +216,20 @@ sup {
     position: absolute;
 }
 
-.phone .wip {
+.phone-container .wip {
     z-index: 11;
-    position: relative;
-    top: -6vh;
-    right: -21vh;
+    position: absolute;
+    top: -5vh;
+    right: -7vh;
     height: 12vh;
 }
 
 .font-size-15 {
     font-size: 1.5rem;
+}
+
+.font-weight-black {
+    font-weight: 900 !important;
 }
 
 .services p {
@@ -212,7 +256,6 @@ sup {
 
 .owl-dots {
     background-color: #C4C5C7;
-    width: 80%;
     height: 1px;
     margin-left: auto;
     margin-right: auto;
@@ -220,6 +263,17 @@ sup {
     justify-content: space-between;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+.computer-carousel .owl-dots {
+    width: 80%;
+}
+
+.team-carousel .owl-dots {
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    right: 0;
 }
 
 .owl-dot {
@@ -234,6 +288,195 @@ sup {
 .owl-dot.active {
     background-color: #35A103!important;
 }
+
+.owl-dots.disabled, .owl-nav.disabled {
+    display: none;
+}
+
 .text-868787 {
     color: #868787;
+}
+
+.steps {
+    position: relative;
+    transition: .5 all ease;
+}
+
+.steps> :first-child, .steps> :last-child {
+    width: .75rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.steps> :first-child {
+    left: 0;
+}
+
+.steps> :last-child {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.steps> :first-child:before, .steps> :first-child:after, .steps> :last-child:before, .steps> :last-child:after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: .75rem;
+    height: .75rem;
+    background-color: #FFFFFF;
+    transition: .5s all ease;
+}
+
+.steps> :first-child:before, .steps> :last-child:before {
+    top: 0;
+}
+
+.steps> :first-child:after, .steps> :last-child:after {
+    bottom: 0;
+}
+
+.after-active:after, .before-active:before {
+    background-color: #35A103!important;
+}
+
+.glg-background {
+    background-image: url('../images/glg_background.png');
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+}
+
+.bg-black-to-white {
+    background: linear-gradient(to bottom, #000000 0vh, #000000 60vh, #ffffff 60vh);
+}
+
+.tabs>.active {
+    border-bottom: 4px solid #35A103;
+}
+
+.avatar {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 4rem;
+    overflow: hidden;
+    margin-top: 1.5rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-full {
+    background-image: url('../images/room.png');
+    background-size: 86vh 86vh;
+    background-repeat: no-repeat;
+    background-position-y: -8vh;
+    background-position-x: right;
+}
+
+.opacity-75 {
+    opacity: .75;
+}
+
+.squared-box {
+    position: relative;
+    transition: .5 all ease;
+}
+
+.squared-box> :first-child, .squared-box> :last-child {
+    width: .75rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.squared-box> :first-child {
+    left: 0;
+}
+
+.squared-box> :last-child {
+    right: 0;
+}
+
+.squared-box> :first-child:before, .squared-box> :first-child:after, .squared-box> :last-child:before, .squared-box> :last-child:after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: .75rem;
+    height: .75rem;
+    background-color: #000000;
+    transition: .5s all ease;
+}
+
+.squared-box> :first-child:before, .squared-box> :last-child:before {
+    top: 0;
+}
+
+.squared-box> :first-child:after, .squared-box> :last-child:after {
+    bottom: 0;
+}
+
+.partners-carousel .logo {
+    border: 1px solid #fff;
+    border-radius: 8rem;
+    padding: 2rem;
+    height: 6rem;
+    width: 6rem;
+    margin-top: 2rem;
+}
+
+.partners-carousel .logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.partners-carousel .owl-item.active.center .logo {
+    margin-top: 0rem;
+    height: 8rem;
+    width: 8rem;
+}
+
+.partners-carousel .owl-item .partner-name {
+    height: 0;
+    overflow: hidden;
+}
+
+.partners-carousel .owl-item.active.center .partner-name {
+    height: auto;
+}
+
+.animate-max {
+    animation-duration: 1s;
+    animation-name: max;
+}
+
+@keyframes max {
+    0% {
+        height: 6rem;
+        width: 6rem;
+        margin-top: 2rem;
+    }
+    100% {
+        height: 8rem;
+        width: 8rem;
+        margin-top: 0rem;
+    }
+}
+
+header {
+    transition: .5s all ease;
+    z-index: 999;
+}
+
+.nav-up {
+    top: -80px;
+}
+
+.nav-down {
+    top: 0;
 }
