@@ -296,6 +296,9 @@ sup {
 .text-868787 {
     color: #868787;
 }
+.text-d1d1d1 {
+    color: #d1d1d1;
+}
 
 .steps {
     position: relative;
@@ -497,4 +500,8 @@ header {
 
 .border-grey {
     border: 1px solid #4D4C4B;
+}
+
+.links a {
+    color: #ffffff;
 }
