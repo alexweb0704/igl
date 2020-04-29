@@ -421,12 +421,14 @@ sup {
 }
 
 .partners-carousel .logo {
-    border: 1px solid #fff;
+    border: 1px solid #35A103;
     border-radius: 8rem;
     padding: 2rem;
-    height: 6rem;
-    width: 6rem;
+    height: 9rem;
+    width: 9rem;
     margin-top: 2rem;
+    transition: .1s all linear;
+    transform: scale(.7) translateY(1.5rem);
 }
 
 .partners-carousel .logo img {
@@ -436,38 +438,21 @@ sup {
 }
 
 .partners-carousel .owl-item.active.center .logo {
-    margin-top: 0rem;
-    height: 8rem;
-    width: 8rem;
+    transform: scale(1)
 }
 
 .partners-carousel .owl-item .partner-name {
     height: 0;
     overflow: hidden;
+    transition: .1s all ease;
 }
 
 .partners-carousel .owl-item.active.center .partner-name {
     height: auto;
+    width: 300%;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
-
-.animate-max {
-    animation-duration: 1s;
-    animation-name: max;
-}
-
-@keyframes max {
-    0% {
-        height: 6rem;
-        width: 6rem;
-        margin-top: 2rem;
-    }
-    100% {
-        height: 8rem;
-        width: 8rem;
-        margin-top: 0rem;
-    }
-}
-
 header {
     transition: .5s all ease;
     z-index: 999;
@@ -479,4 +464,13 @@ header {
 
 .nav-down {
     top: 0;
+}
+
+.quote-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.bg-black-95 {
+    background-color: #000000f0;
 }
