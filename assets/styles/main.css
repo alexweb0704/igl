@@ -574,7 +574,8 @@ header {
   left: -100%;
   bottom: 0;
   right: 0;
-
+    z-index: 99999;
+    
   background-image: url("../assets/img/Logo.png");
   background-repeat: no-repeat;
   background-position: center;
